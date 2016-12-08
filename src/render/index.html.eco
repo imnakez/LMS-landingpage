@@ -1,0 +1,240 @@
+---
+title: "LMS Landing page"
+layout: "default"
+isPage: true
+---
+<section class="wrapper wrapper--promo col-flex-xs">
+  <header class="navigation">
+    <div class="container">
+      <nav class="row row-between-xs">
+        <div class="col-xs-shrink logo">
+          <img src="<%= @getUrl('img/logo.png') %>" alt="LMS">
+        </div>
+        <div class="col-xs-shrink demo">
+          <a href="#" class="">Need more than a trial? SCHEDULE A DEMO</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <article class="promo flex-grow-xs">
+    <div class="container">
+      <h1>The Learning Management System You’ll Love to Use</h1>
+      <h4 class="slogan-sub">Train employees, partners and customers worldwide</h4>
+      <div class="call-to-action call-to-action--top">
+        <div class="row row-center-xs">
+          <div class="col-xs-4">
+            <input type="text" name="" value="" placeholder="Your Email">
+          </div>
+          <div class="col-xs-4">
+            <input type="text" name="" value="" placeholder="Your Name">
+          </div>
+          <div class="col-xs-4">
+            <input type="text" name="" value="" placeholder="URL">
+          </div>
+        </div>
+        <h5 class="notes">By clicking above to sign up, you are agreeing to the JLMS <a href="/" class="">Terms of Service</a> &amp; <a href="/" class="">Privacy Policy</a></h5>
+        <div class="row row-center-xs">
+          <div class="col-xs-4">
+            <button class="btn btn-purchase btn-block" type="button" name="button">Start Your Free Trial</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <article class="options">
+    <div class="container">
+      <div class="row row-around-xs">
+        <div class="col-xs-shrink options__point">
+          <div class="options__point__icon"></div>
+          <h5 class="options__point__label">
+            Reduce training costs
+          </h5>
+        </div>
+        <div class="col-xs-shrink options__point">
+          <div class="options__point__icon"></div>
+          <h5 class="options__point__label">
+            Move classes online
+          </h5>
+        </div>
+        <div class="col-xs-shrink options__point">
+          <div class="options__point__icon"></div>
+          <h5 class="options__point__label">
+            Extend LMS functionality
+          </h5>
+        </div>
+        <div class="col-xs-shrink options__point">
+          <div class="options__point__icon"></div>
+          <h5 class="options__point__label">
+            Create courses in minutes
+          </h5>
+        </div>
+        <div class="col-xs-shrink options__point">
+          <div class="options__point__icon"></div>
+          <h5 class="options__point__label">
+            Get instant support
+          </h5>
+        </div>
+      </div>
+      <div class="scroll scroll--down">
+        <a href="#" title="scroll down" class="btn btn-link"></a>
+      </div>
+    </div>
+  </article>
+</section>
+<article class="clients">
+  <div class="row row-between-xs">
+    <div class="col-xs-shrink">
+      puma
+    </div>
+    <div class="col-xs-shrink">
+      levis
+    </div>
+    <div class="col-xs-shrink">
+      nike
+    </div>
+    <div class="col-xs-shrink">
+      adidas
+    </div>
+    <div class="col-xs-shrink">
+      apple
+    </div>
+    <div class="col-xs-shrink">
+      samsung
+    </div>
+    <div class="col-xs-shrink">
+      sony
+    </div>
+  </div>
+</article>
+<article class="with-lms space-in-top-kilo">
+  <div class="container">
+    <h1 class="header space-out-bottom-kilo">With JoomlaLMS</h1>
+    <div class="row row-between-xs">
+      <div class="col-xs-7 col-flex-xs">
+        <h4 class="with-lms__point flex-grow-xs">
+          You are not constrained by out-of-box LMS functionality and can make JoomlaLMS meet your training/eLearning needs
+        </h4>
+        <h4 class="with-lms__point flex-grow-xs">
+          Don't need to worry about security restrictions for storing private date as JoomlaLMS is integrated into your website
+        </h4>
+        <h4 class="with-lms__point flex-grow-xs">
+          Can teach students, train employees or sell courses online. JoomlaLMS suits all business sizes and industries
+        </h4>
+      </div>
+      <div class="col-xs-5 col-flex-xs">
+        <h4 class="with-lms__point flex-grow-xs">
+          Can white-label JoomlaLMS and remove any references to JoomlaLMS
+        </h4>
+        <h4 class="with-lms__point flex-grow-xs">
+          Can start from a smaller amount of users and upgrade as your company's size grows
+        </h4>
+        <h4 class="with-lms__point flex-grow-xs">
+          Can request support assistance if any technical issues arises
+        </h4>
+      </div>
+    </div>
+    <div class="row row-center-xs space-out-v-base">
+      <div class="col-xs-4">
+        <button class="btn btn-purchase btn-block" type="button" name="button">Start Your Free Trial</button>
+      </div>
+    </div>
+  </div>
+</article>
+<article class="screens">
+  <img src="<%= @getUrl('img/desktop.jpg') %>">
+  <svg class="triangle triangle--top" width="1600px" height="227px" viewBox="0 0 1600 227" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <polygon id="Rectangle-5" stroke="none" fill="#FFFFFF" fill-rule="evenodd" points="1600 0 1600 227 0 227"></polygon>
+  </svg>
+</article>
+<article class="zoom">
+  <a class="zoom__desktop" href="/" title="desktop">
+    <img class="zoom__desktop-screen" src="<%= @getUrl('../img/desktop-screen.png') %>" alt="">
+    <svg width="640px" height="361px" viewBox="0 0 640 361" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <rect id="desktop" stroke="none" fill="#000000" fill-rule="evenodd" x="0" y="0" width="640" height="361"></rect>
+    </svg>
+    <img class="zoom__icon" src="<%= @getUrl('../img/zoom.svg') %>" alt="zoom">
+  </a>
+</article>
+<article class="features">
+  <div class="container">
+    <div class="features__points space-in-top-kilo">
+      <h1 class="header space-out-bottom-kilo">Features</h1>
+      <div class="row row-between-xs">
+        <div class="col-xs-6 col-flex-xs">
+          <div class="flex-grow-xs features__point">
+            <h3 class="features__header">SCORM and AICC Compatibility</h3>
+            <h5 class="features__description">Save time on content creation, easily export-import eLearning materials and apply different eLearning techniques</h5>
+          </div>
+          <div class="flex-grow-xs features__point">
+            <h3 class="features__header">Android and iOS Compatible Mobile App</h3>
+            <h5 class="features__description">Make mobile learning possible. You can use both an official mobile app or order a branded one with your own logo and listing on Play Market and iTunes</h5>
+          </div>
+          <div class="flex-grow-xs features__point">
+            <h3 class="features__header">Advanced Ecommerce Capabilities</h3>
+            <h5 class="features__description">Sell courses using a variety of ecommerce tools integrated, issue invoices, generate coupons, discounts and fee trials</h5>
+          </div>
+        </div>
+        <div class="col-xs-6 col-flex-xs">
+          <div class="flex-grow-xs features__point">
+            <h3 class="features__header">Comprehensive Tracking and Reporting</h3>
+            <h5 class="features__description">Stay in the know of an eLearning/training process, find gaps in students knowledge and bring necessary changes</h5>
+          </div>
+          <div class="flex-grow-xs features__point">
+            <h3 class="features__header">Live/Video Conferencing</h3>
+            <h5 class="features__description">Schedule live  conferences and webinars within JoomlaLMS framework. Apply blended learning technique</h5>
+          </div>
+          <div class="flex-grow-xs features__point">
+            <h3 class="features__header">Joomla! CMS as a Platform for Your Project</h3>
+            <h5 class="features__description">Extend default JoomlaLMS functionality by adding integration with numerous Joomla! extensions. Have a full control over CMS and LMS</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+<article class="triangle-wrapper">
+  <svg class="triangle triangle--bottom" width="1600px" height="227px" viewBox="0 0 1600 227" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <polygon stroke="none" fill="#FFFFFF" fill-rule="evenodd" points="0 0 1600 0 0 227"></polygon>
+  </svg>
+</article>
+<article class="videos">
+  <div class="container">
+    <div class="video space-in-v-base">
+      <h3>What Others Think of JoomlaLMS</h3>
+      <div class="row row-center-xs">
+        <div class="col-xs-4">
+          <div class="player">
+
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="player">
+
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="player">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+<article class="promo">
+  <div class="container">
+    <div class="call-to-action call-to-action--bottom">
+      <h3>Tell us a little about yourself, and get instant access to JoomlaLMS!</h3>
+      <div class="row row-center-xs">
+        <div class="col-xs-4">
+          <button class="btn btn-purchase btn-block" type="button" name="button">Try It Now For Free</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+<footer>
+  <div class="footer">
+    © JoomlaLMS, 2016
+  </div>
+</footer>

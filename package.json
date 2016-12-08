@@ -1,0 +1,42 @@
+{
+  "name": "lms-landingpage",
+  "version": "0.0.0",
+  "description": "landing page of lms",
+  "author": "anna artyushkevich",
+  "dependencies": {
+    "bower": "^1.4.1",
+    "docpad": "~6.79.0",
+    "docpad-plugin-cleanurls": "^2.7.0",
+    "docpad-plugin-coffeescript": "^2.5.0",
+    "docpad-plugin-eco": "^2.1.0",
+    "docpad-plugin-geturl": "^2.1.1",
+    "docpad-plugin-ghpages": "~2.4.3",
+    "docpad-plugin-grunt": "git://github.com/interpaul/docpad-plugin-grunt.git#v211compiled",
+    "docpad-plugin-ignoreincludes": "^2.1.0",
+    "docpad-plugin-less": "~2.4.1",
+    "docpad-plugin-livereload": "~2.7.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-connect": "^0.8.0",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-imagemin": "^0.9.4",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-uglify": "^0.5.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-cssnano": "^2.1.0",
+    "grunt-cssnext": "^1.0.0",
+    "grunt-modernizr": "^0.6.1",
+    "grunt-newer": "^0.7.0",
+    "grunt-pixrem": "^0.1.2",
+    "grunt-postcss": "^0.8.0",
+    "grunt-shell": "^0.7.0",
+    "grunt-shell-spawn": "^0.3.10"
+  },
+  "devDependencies": {},
+  "main": "node_modules/.bin/docpad-server",
+  "scripts": {
+    "start": "node_modules/.bin/docpad-server"
+  }
+}

@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title><%= @document.title %> | My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="<%= @getUrl('/favicon.ico') %>" type="image/x-icon">
+    <link rel="icon" href="<%= @getUrl('/favicon.ico') %>" type="image/x-icon">
+    <link rel="icon" type="image/png" href="<%= @getUrl('/favicon.png') %>" sizes="16x16">
+    <%- @getBlock("meta").toHTML() %>
+    <%- @getBlock("styles").add(@getUrl(@site.styles)).add(@getUrl(@document.styles)).toHTML() %>
+</head>
+<body class="body">
+  <div class="body-content">
+    <%- @content %>
+    <%- @getBlock("scripts").add(@getUrl(@site.scripts)).add(@getUrl(@document.scripts)).toHTML() %>
+  </div>
+</body>
+</html>
