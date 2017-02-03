@@ -1,14 +1,22 @@
-# Logs
-logs
-*.log
-npm-debug.log*
+# Temp Files
+**/*.log
+**/.docpad.db
 
-node_modules/
+# Build Files
+build/
+components/
 bower_components/
+node_modules/
 out/
-rsync.bat
 .docpad.db
-.ftppass
+
+# IDE files
+.idea/
 .DS_Store
+desktop.ini
 .grunt
 .npm
+
+# =====================================
+# CUSTOM MODIFICATIONS
+src/files/vendor
