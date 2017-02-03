@@ -66,6 +66,14 @@ module.exports = (grunt) ->
 					'out/favicon.ico': 'src/render/img/favicon.inc.ico',
 					'out/favicon.png': 'src/render/img/favicon.inc.png'
 				]
+			bower:
+				files: [
+					#'out/vendor/aos.css':'bower_components/aos/dist/aos.css',
+					'out/vendor/animate.min.css':'bower_components/animate.css/animate.min.css',
+					#'out/vendor/aos.css.map':'bower_components/aos/dist/aos.css.map',
+					#'out/vendor/wow.js':'bower_components/wow/dist/wow.js'
+					#'out/vendor/aos.js':'bower_components/aos/dist/aos.js'
+				]
 
 # track changes in src dir and regenerate docpad
 		watch:
@@ -145,8 +153,8 @@ module.exports = (grunt) ->
 	grunt.registerTask 'generate',		['clean:out', 'shell:docpad', 'preprocess', 'prepare', 'postprocess']
 	grunt.registerTask 'server',			['connect', 'watch:src', 'watch:out']
 	grunt.registerTask 'run2',				['generate', 'server']
-	grunt.registerTask 'run',					['shell:run', 'postprocess', 'clean:out', 'copy', 'watch:less']
+	grunt.registerTask 'run',					['clean:out', 'shell:run', 'postprocess', 'copy', 'watch:less']
 	grunt.registerTask 'development', ['preprocess', 'prepare', 'postprocess', 'watch:less']
 	grunt.registerTask 'production',	['preprocess', 'prepare', 'postprocess']
-	grunt.registerTask 'deploy',			['clean:out', 'preprocess', 'prepare', 'postprocess', 'shell:deploy']
+	grunt.registerTask 'deploy',			['preprocess', 'prepare', 'postprocess', 'shell:deploy']
 	grunt.registerTask 'default',			['run']

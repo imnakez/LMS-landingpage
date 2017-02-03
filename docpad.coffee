@@ -12,26 +12,27 @@ docpadConfig = {
 	templateData:
 		site:
 			# The production url of our website. Used in sitemap and rss feed
-			url: "http://anyarty.github.io/LMS-landingpage"
+			url: "https://anyarty.github.io/LMS-landingpage"
 
 			# no slash at the end
-			canonicalUrl: "http://anyarty.github.io/LMS-landingpage"
+			canonicalUrl: "https://anyarty.github.io/LMS-landingpage"
 
 			# The website's styles
 			styles: [
-				'/styles/styles.css'
+				'/vendor/animate.min.css'
+				'/styles/styles.css',
 			]
 
 			# The website's production scripts.
 			# See also Environments section below for development scripts
 			scripts: [
-				'/vendor/bootstrap/js/bootstrap.min.js'
-				'/vendor/sticky/jquery.sticky.min.js'
-				'/vendor/jquery.localScroll/jquery.localScroll.min.js'
-				'/vendor/jquery.scrollTo/jquery.scrollTo.min.js'
-				'/vendor/bowser/bowser.min.js'
-				'/vendor/alfablur/StackBlur.js'
-				'/vendor/alfablur/alfablur.js'
+				'/vendor/bootstrap.min.js'
+			#	'/vendor/wow.js'
+			#	'/vendor/sticky/jquery.sticky.min.js'
+			#	'/vendor/jquery.localScroll/jquery.localScroll.min.js'
+			#	'/vendor/jquery.scrollTo/jquery.scrollTo.min.js'
+			#	'/vendor/alfablur/StackBlur.js'
+			#	'/vendor/alfablur/alfablur.js'
 				'/scripts/script.js'
 			]
 # -----------------------------

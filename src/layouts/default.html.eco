@@ -9,8 +9,9 @@
     <%- @getBlock("styles").add(@getUrl(@site.styles)).add(@getUrl(@document.styles)).toHTML() %>
 </head>
 <body class="body">
-  <div class="body-content">
+  <div class="body-content" data-spy="scroll" data-target="#scrollspy">
     <%- @content %>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <%- @getBlock("scripts").add(@getUrl(@site.scripts)).add(@getUrl(@document.scripts)).toHTML() %>
   </div>
 </body>
