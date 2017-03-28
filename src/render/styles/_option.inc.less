@@ -1,0 +1,72 @@
+.options {
+  background: @background-options padding-box;
+  border-top: 41px solid transparent;
+}
+
+.options__content {
+  position: relative;
+  padding-bottom: 40px;
+
+  @media (min-width: @screen-xs) {
+    padding-bottom: 0;
+  }
+
+  @media (max-width: @screen-spec-desktop) and (orientation: landscape) {
+    padding-bottom: 40px;
+  }
+}
+
+.options-icon(@counter, @x, @y) {
+  &:nth-child(@{counter}) .options__point__icon {
+    background: linear-gradient(transparent 0, transparent 50%, fade(black, 10%) 50%, fade(black, 10%) 100%), url('../img/option-@{counter}.svg') right @x top @y no-repeat, @green;
+  }
+}
+
+.options__point {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
+  @media (min-width: @screen-xs) {
+    display: block;
+  }
+
+  .options__point__icon {
+    display: inline-block;
+    width: 82px;
+    height: 82px;
+    margin-top: -41px;
+    border-radius: 50%;
+  }
+
+  .options-icon(1, 17px, 20px);
+
+  .options-icon(2, 10px, 20px);
+
+  .options-icon(3, 27px, 27px);
+
+  .options-icon(4, 27px, 27px);
+
+  .options-icon(5, 17px, 20px);
+
+  @media (min-width: @screen-xs) {
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5) {
+      display: block;
+    }
+  }
+}
+
+.options__point__label {
+  max-width: 140px;
+  margin: auto;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: @paper;
+}

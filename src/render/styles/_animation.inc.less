@@ -1,0 +1,29 @@
+@keyframes backgroundScroll {
+  0% {
+    background-position: 0 center;
+  }
+
+  100% {
+    background-position: 15000px center;
+  }
+}
+
+.clients--wrapper {
+  flex-wrap: nowrap;
+}
+
+.clients--logos {
+  height: 120px;
+  background: linear-gradient(fade(@paper, 70%), fade(@paper, 70%)), url('../img/logos.png') center repeat-x;
+  background-size: auto 46px;
+  animation: backgroundScroll 250s linear infinite;
+  filter: grayscale(100%);
+
+  &:hover {
+    background: url('../img/logos.png') center repeat-x;
+    background-size: auto 46px;
+    filter: none;
+    transition: background 1s ease,
+                    filter 1s ease;
+  }
+}

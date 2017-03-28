@@ -1,0 +1,142 @@
+@paper: #FFF;
+@ink: #4A4A4A;
+@ink-light: #999999;
+@green: #5ABE59;
+@grey: #F2F2F2;
+@grey-dark: #E7E7E7;
+@orange-light: #FFCD67;
+@orange-dark: #FFB419;
+@blue-primary: #449EE9;
+@blue-light: #5EB1F6;
+@blue: #409AE6;
+@blue-dark: #0D75CB;
+
+@link:          @paper;
+@visited:       #0877db;
+@hover:         #2b9aff;
+@visitedhover:  #2b9aff;
+@active:        #2b9aff;
+
+@background-main: #001A28;
+@background-cta: #000A0F;
+@background-options: #3B4A50;
+
+@font-family: 'Open Sans', sans-serif;
+
+@screen-xxs:            320px;
+@screen-xs:             576px;
+@screen-spec-tablet:    576px;
+@screen-sm:             768px;
+@screen-md:             960px;
+@screen-spec-desktop:   1024px;
+@screen-lg:             1200px;
+@screen-spec:           1370px;
+@screen-xlg:            1600px;
+@screen-xxlg:           2000px;
+
+@screen-xxs-min:        @screen-xxs;
+@screen-xs-min:         @screen-xs;
+@screen-sm-min:         @screen-sm;
+@screen-md-min:         @screen-md;
+@screen-lg-min:         @screen-lg;
+@screen-xlg-min:        @screen-xlg;
+
+@screen-xxs-max:        (@screen-xs-min - 1);
+@screen-xs-max:         (@screen-sm-min - 1);
+@screen-sm-max:         (@screen-md-min - 1);
+@screen-md-max:         (@screen-lg-min - 1);
+@screen-lg-max:         (@screen-xlg-min - 1);
+
+.bettertext-settings() {
+    //settings
+    @font-body: @font-family, sans-serif;     // body
+    @font-headers: @font-family, sans-serif;  // headers
+}
+
+.links-settings() {
+    //colors
+    @link:          @paper;
+    @visited:       #0877db;
+    @hover:         #2b9aff;
+    @visitedhover:  #2b9aff;
+    @active:        #2b9aff;
+}
+
+.buttons-settings() {
+    //default settings
+    @btn-font-weight: normal;
+    @btn-line-height: 1.7;
+    @btn-border-radius: 0;
+    //@btn-border: none;
+
+    @default-render: true;
+    @default: default;
+    @default-border-color: @blue-primary;
+    @default-background-color: transparent;
+    @default-background-color-hover: lighten(@default-background-color, 4%);
+    @default-gradient-color: #FEFEFF;
+    @default-color: @blue-primary;
+    @default-color-hover: lighten(@default-color, 10%);
+    @default-text-shadow: 0px 1px 0px rgba(255,255,255,0.40);
+    @default-text-transform: uppercase;
+    @default-pressed-bxsh: inset 0 1px 3px -1px rgba(0,0,0,0.40);
+
+    @purchase-render: true;
+    @purchase: purchase;
+    @purchase-border-color: fade(#000, 20%);
+    @purchase-background-color: @green;
+    @purchase-background-color-hover: lighten(@purchase-background-color, 8%);
+    @purchase-gradient-color: #63BA11;
+    @purchase-color: #FFFFFF;
+    @purchase-color-hover: @purchase-color;
+    @purchase-text-shadow: 0px 1px 1px rgba(0,0,0,0.40);
+    @purchase-text-transform: uppercase;
+    @purchase-pressed-bxsh: inset 0 1px 3px -1px rgba(0,0,0,0.40);
+}
+
+.grid-settings() {
+
+    // settings
+    // media breakpoints (default: as on bootstrap)
+    @breakpoints:
+        ~"(min-width: 576px)",
+        ~"(min-width: 768px)",
+        ~"(min-width: 960px)",
+        ~"(min-width: 1200px)",
+        ~"(min-width: 1600px)";
+
+    // max-width of containers according breakpoints
+    @container-maw:
+        100%,
+        750px,
+        970px,
+        1170px,
+        1540px;
+
+    // names for breakpoint suffixes
+    @suffixes: xxs, xs, sm, md, lg, xlg;
+
+    // IMPORTANT: suffixes count should be bigger than breakpoints count by 1
+    // suffixes-count = breakpoints-count + 1
+
+}
+
+.space-settings() {
+
+    @spaces: 0, 8px, 16px, 24px, 40px, 64px, 104px, 168px;
+    @spacealias: zero, nano, micro, mili, base, kilo, mega, giga;
+
+    // media breakpoints
+    @breakpoints:
+      ~"(min-width: 576px)",
+      ~"(min-width: 768px)",
+      ~"(min-width: 960px)",
+      ~"(min-width: 1200px)",
+      ~"(min-width: 1600px)";
+
+    // names for breakpoint suffixes
+    @suffixes: xxs, xs, sm, md, lg, xlg;
+
+    // IMPORTANT: suffixes count should be bigger than breakpoints count by 1
+    // suffixes-count = breakpoints-count + 1
+}

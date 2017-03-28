@@ -1,0 +1,51 @@
+.wrapper--promo {
+  @media (min-width: @screen-md) {
+    height: 100vh;
+    max-height: 1024px;
+  }
+
+  @media (max-width: @screen-spec-desktop) and (orientation: landscape) {
+    height: auto;
+    max-height: none;
+  }
+}
+
+.promo {
+  color: @paper;
+
+  .slogan {
+    line-height: 1.346155;
+  }
+
+  @media (min-width: @screen-md) {
+    display: block;
+    display: -webkit-box;
+    margin: auto;
+
+    .container {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+  }
+}
+
+.slogan-sub {
+  margin-top: 1.2em;
+  margin-bottom: 2.4em;
+}
+
+.call-to-action {
+  &.call-to-action--top {
+    background: fade(@background-cta, 40%);
+  }
+
+  &.call-to-action--bottom {
+    .btn {
+      font-size: 22px;
+    }
+  }
+}
+
+.notes {
+  font-size: 0.875em;
+}

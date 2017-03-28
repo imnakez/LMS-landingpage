@@ -1,0 +1,48 @@
+.videos {
+  position: relative;
+  background: linear-gradient(@blue, @blue-dark);
+
+  .header {
+    color: @paper;
+  }
+}
+
+.player__container {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
+  @media (min-width: @screen-sm) {
+    display: block;
+  }
+}
+
+video {
+  background: #808080;
+  box-shadow: 1px 1px 5px fade(black, 30%);
+}
+
+.player:not(.played) {
+  position: relative;
+
+  &::before {
+    content: url(../img/play.svg);
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    opacity: .5;
+  }
+}
+
+.video-content {
+  width: 100%;
+  height: auto;
+}

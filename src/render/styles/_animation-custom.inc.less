@@ -1,0 +1,97 @@
+@keyframes jumpIcon {
+  from, 20%, 40%, 60%, 80%, to {
+    animation-timing-function: ease-in-out;
+  }
+
+  from, to {
+    transform: translateY(0) translateX(0);
+  }
+
+	20%, 60% {
+    transform: translateY(10px) translateX(-10px);
+  }
+
+	40%, 80% {
+    transform: translateY(-20px) translateX(20px) scale(1.2,1.2);
+    transform-origin: left bottom;
+  }
+}
+
+@keyframes scaleScreen {
+  from, 50%, to {
+    animation-timing-function: ease-in-out;
+  }
+
+  from {
+    transform: scale(0.9,0.9);
+  }
+
+  to {
+    transform: scale(1,1);
+  }
+
+	50% {
+    transform: scale(1.05,1.05);
+  }
+}
+
+@keyframes backScreenZoom {
+  from, to {
+    animation-timing-function: ease-in-out;
+  }
+
+  from {
+    background: fade(black, 0%);
+  }
+
+  to {
+    background: fade(black, 50%);
+  }
+}
+
+@keyframes fadeInIcon {
+  from, to {
+    animation-timing-function: ease-in-out;
+  }
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 20%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+.animation {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+
+  .scrolltop &:not(.in-view) {
+    animation-direction: reverse;
+  }
+}
+
+.in-view {
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+  backface-visibility: hidden;
+}

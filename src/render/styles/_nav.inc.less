@@ -1,0 +1,85 @@
+.navigation {
+  .demo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: @paper;
+
+    a {
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background: @paper;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  transform: translateY(-100%);
+  transition: all 400ms ease;
+
+  &.is-sticky.scrolltop {
+    transform: translateY(0%);
+  }
+
+  .logo--mini {
+    display: none;
+
+    .logo__link {
+      display: flex;
+    }
+
+    img {
+      width: 116px;
+      height: 46px;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    @media (min-width: @screen-sm) {
+      display: flex;
+    }
+  }
+
+  .scollspy-container {
+    display: flex;
+  }
+
+  .nav {
+    display: flex;
+    flex-grow: 1;
+    list-style-type: none;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    a {
+      &:link          {color: @hover;}
+      &:visited       {color: @visited;}
+      &:hover         {color: @hover;}
+      &:visited:hover {color: @visitedhover;}
+      &:active        {color: @ink;}
+
+      line-height: 4.2;
+      text-decoration: none;
+    }
+
+    .active a {
+      color: black;
+    }
+  }
+}
+
+.logo img {
+  width: 251px;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

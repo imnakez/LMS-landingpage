@@ -3,7 +3,7 @@ title: "LMS Landing page"
 layout: "default"
 isPage: true
 ---
-<section class="wrapper wrapper--promo col-flex-sm">
+<section id="home" class="wrapper wrapper--promo col-flex-sm">
   <header class="navigation">
     <div class="container space-in-h-micro-xxs space-in-h-base-xs space-in-h-micro-sm">
       <nav class="row row-center-xxs row-between-sm">
@@ -11,7 +11,7 @@ isPage: true
           <img src="<%= @getUrl('img/logo.png') %>" alt="LMS">
         </div>
         <div class="col-xxs-shrink demo">
-          <a href="#" class="">Need more than a trial? <br class="hidden-xs"/>SCHEDULE A DEMO</a>
+          <a href="#" class="">Need more than a trial? <br class="hidden-xs-up"/>SCHEDULE A DEMO</a>
         </div>
       </nav>
     </div>
@@ -19,7 +19,7 @@ isPage: true
       <div class="container space-in-h-micro-xxs space-in-h-base-xs space-in-h-micro-sm">
         <nav class="row row-between-xxs">
           <div class="col-xxs-shrink logo logo--mini">
-            <img src="<%= @getUrl('img/logo-mini.png') %>" alt="LMS">
+            <a href="#home" class="logo__link"><img src="<%= @getUrl('img/logo-mini.png') %>" alt="LMS"></a>
           </div>
           <div class="col-xxs-12 col-sm-7 col-md-6 col-lg-5 scrollspy-container" id="scrollspy">
             <ul class="nav space-out-zero-xxs space-in-left-zero-xxs">
@@ -33,20 +33,27 @@ isPage: true
       </div>
     </div>
   </header>
-  <article id="trial" class="promo flex-grow-sm">
-    <div class="container space-out-top-micro-xxs space-in-h-micro-xxs space-in-h-base-xs space-in-h-micro-sm">
+  <article id="trial" class="promo flex-grow-sm-">
+    <div class="container space-out-top-micro-xxs space-auto-top-md space-in-h-micro-xxs space-in-h-base-xs space-in-h-micro-sm">
       <h1 class="slogan">The Learning Management System <br class="hidden-spec-desktop"/>You’ll Love to Use</h1>
       <h4 class="slogan-sub">Train employees, partners and customers worldwide</h4>
-      <div class="call-to-action call-to-action--top space-in-mili-xxs space-in-base-xs">
+      <form class="call-to-action call-to-action--top space-in-mili-xxs space-in-base-xs">
         <div class="row row-center-xxs">
           <div class="col-xxs-12 col-sm-7 col-md-4 space-out-bottom-mili-xxs">
-            <input type="text" name="" value="" placeholder="Your Email">
+            <div class="input-group trial trial-email">
+              <input type="text" class="form-control" name="email" value="" placeholder="Your Email" aria-label="Enter your email">
+            </div>
           </div>
           <div class="col-xxs-12 col-sm-7 col-md-4 space-out-bottom-mili-xxs">
-            <input type="text" name="" value="" placeholder="Your Name">
+            <div class="input-group trial trial-name">
+              <input type="text" class="form-control" name="name" value="" placeholder="Your Name" aria-label="Enter your name">
+            </div>
           </div>
           <div class="col-xxs-12 col-sm-7 col-md-4 space-out-bottom-mili-xxs">
-            <input type="text" name="" value="" placeholder="URL">
+            <div class="input-group trial trial-url">
+              <input type="text" class="form-control" name="url" value="" placeholder="URL" aria-label="Customize your subdomain">
+              <span class="input-group-addon">.joomlalms.com</span>
+            </div>
           </div>
         </div>
         <h5 class="notes space-out-top-zero-xxs space-out-bottom-mili-xxs">By clicking above to sign up, you are agreeing to the JLMS <a href="/" class="">Terms of Service</a> &amp; <a href="/" class="">Privacy Policy</a></h5>
@@ -55,13 +62,13 @@ isPage: true
             <button class="btn btn-purchase btn-block" type="button" name="button">Start Your Free Trial</button>
           </div>
         </div>
-      </div>
+      </form>
     </div>
   </article>
   <article class="options space-out-top-mili-xxs">
     <div class="container space-in-h-micro-xxs space-in-h-base-xs space-in-h-micro-sm">
-      <div class="row row-center-xxs row-around-md">
-        <div class="col-xxs-12 col-xs-6 col-sm-4 col-md-shrink options__point">
+      <div id="options__points" class="options__content row row-center-xxs row-around-md">
+        <div class="col-xxs-12 col-xs-6 col-sm-4 col-md-shrink options__point active">
           <div class="options__point__icon"></div>
           <h5 class="options__point__label">
             Reduce training costs
@@ -85,48 +92,36 @@ isPage: true
             Create courses in minutes
           </h5>
         </div>
-        <div class="ccol-xxs-12 col-xs-6 col-sm-4 col-md-shrink options__point">
+        <div class="col-xxs-12 col-xs-6 col-sm-4 col-md-shrink options__point">
           <div class="options__point__icon"></div>
           <h5 class="options__point__label">
             Get instant support
           </h5>
         </div>
+        <div class="scroll scroll--carousel">
+          <div class="scroll--prev">
+            <a href="#" title="scroll to previous" class="btn btn-link"></a>
+          </div>
+          <div class="scroll--next">
+            <a href="#" title="scroll to next" class="btn btn-link"></a>
+          </div>
+        </div>
       </div>
       <div class="scroll scroll--down">
-        <a href="#" title="scroll down" class="btn btn-link"></a>
+        <a href="#options" title="scroll down" class="btn btn-link"></a>
       </div>
     </div>
   </article>
 </section>
 <article class="clients">
-  <div class="row row-between-xxs">
-    <div class="col-xxs-shrink">
-      puma
-    </div>
-    <div class="col-xxs-shrink">
-      levis
-    </div>
-    <div class="col-xxs-shrink">
-      nike
-    </div>
-    <div class="col-xxs-shrink">
-      adidas
-    </div>
-    <div class="col-xxs-shrink">
-      apple
-    </div>
-    <div class="col-xxs-shrink">
-      samsung
-    </div>
-    <div class="col-xxs-shrink">
-      sony
-    </div>
+  <div class="row row-center-xxs clients--wrapper" id="clientsWrapper">
+    <div class="col-xxs clients--logos"></div>
   </div>
 </article>
 <section id="options" class="wrapper wrapper--with-lms">
-  <article class="with-lms space-in-top-kilo">
-    <div class="container space-in-h-micro-xxs space-in-h-base-xs space-in-h-mili-md space-in-h-zero-lg">
-      <h1 class="header header--iconed space-out-bottom-kilo">With JoomlaLMS</h1>
+  <article class="with-lms space-in-top-kilo-xxs">
+    <div class="container space-in-h-micro-xxs space-in-h-base-xs space-in-h-mili-md space-in-h-nano-lg">
+      <h1 class="header header--iconed space-out-bottom-kilo-xxs">With JoomlaLMS</h1>
       <div class="row row-center-xxs">
         <div class="col-xxs-12 col-xs-11 col-sm-10 col-md-7 col-lg-6 col-xlg-5 col-flex-md">
           <h4 class="with-lms__point flex-grow-sm">
@@ -151,7 +146,7 @@ isPage: true
           </h4>
         </div>
       </div>
-      <div class="row row-center-xs space-out-v-base">
+      <div class="row row-center-xs space-out-v-base-xxs">
         <div class="col-xxs-12 col-xs-11 col-sm-10 col-md-4">
           <div class="row">
               <div class="col-xxs-12 col-xs-7 col-sm-18 col-md-12 space-out-left-kilo-xs space-out-left-zero-md">
@@ -169,7 +164,7 @@ isPage: true
     <a class="screens__zoom" id="zoom" href="#" title="click to zoom">
       <span class="screens__zoom__container screens__zoom__container--desktop">
         <img class="screens__zoom__screen screens__zoom__screen--desktop" src="<%= @getUrl('img/desktop-screen.png') %>" alt="screen">
-        <svg class="screens__zoom__shape screens__zoom__shape--desktop" width="472px" height="264px" viewBox="0 0 472 264" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <svg class="screens__zoom__shape screens__zoom__shape--desktop" viewBox="0 0 472 264" version="1.1" xmlns="http://www.w3.org/2000/svg">
           <path d="M462.826406,38.16 C395.504198,38.16 340.927748,92.638 340.927748,159.84 C340.927748,203.728 364.207315,242.188 399.109635,263.592 L1.44157402,264 L-1.13686838e-13,0.72 L471,0 L470.755564,38.414 C468.133882,38.246 465.490162,38.16 462.826406,38.16" stroke="none" fill="#000000" fill-rule="evenodd"></path>
         </svg>
       </span>
@@ -191,8 +186,8 @@ isPage: true
 </section>
 <article id="features" class="features">
   <div class="container space-in-h-micro-xxs space-in-h-base-xs space-in-h-micro-sm">
-    <div class="features__points space-in-h-mili-xxs space-in-h-base-xs space-in-top-kilo">
-      <h1 class="header header--iconed space-out-bottom-kilo">Features</h1>
+    <div class="features__points space-in-h-mili-xxs space-in-h-base-xs space-in-top-kilo-xxs">
+      <h1 class="header header--iconed space-out-bottom-kilo-xxs">Features</h1>
       <div class="row row-between-sm row-center-md">
         <div class="col-xxs-12 col-sm-6 col-lg-5 col-xlg-5 col-flex-sm space-in-right-mili-md space-in-right-kilo-lg features__container">
           <div class="flex-grow-sm features__point active animation" data-animation="fadeInUp">
@@ -225,7 +220,7 @@ isPage: true
       </div>
       <div class="row row-center-xxs space-out-top-mili-sm space-out-v-base-xxs">
         <div class="col-xxs-shrink">
-          <button class="btn btn-default btn-block" type="button" name="button"><span class="visible-xs-inline">Explore </span><span class="hidden-sm">All </span><span class="visible-sm-inline">the Full Range of</span><span class="visible-xs-inline"> JoomlaLMS </span>Features</button>
+          <button class="btn btn-default btn-block" type="button" name="button"><span class="hidden-xxs-down">Explore </span><span class="hidden-sm-up">All </span><span class="hidden-xs-down">the Full Range of</span><span class="hidden-xxs-down"> JoomlaLMS </span>Features</button>
         </div>
       </div>
     </div>
@@ -234,22 +229,63 @@ isPage: true
 <article id="videos" class="videos">
   <div class="triangle triangle--bottom"></div>
   <div class="container space-in-h-micro-xxs space-in-h-base-xs space-in-h-micro-sm">
-    <div class="video space-in-bottom-micro-xxs space-in-top-mili-xxs space-in-bottom-base-xs">
-      <h3 class="header">What Others Think of <span class="hidden-xs">Us</span><span class="visible-xs-inline">JoomlaLMS</span></h3>
-      <div class="row row-center-xxs">
-        <div class="col-xxs-12 col-sm-4 player__container">
+    <div class="video space-in-top-mili-xxs space-in-bottom-micro-xxs space-in-bottom-base-xs">
+      <h3 class="header">What Others Think of <span class="hidden-xs-up">Us</span><span class="hidden-xxs-down">JoomlaLMS</span></h3>
+      <div id="videoPlayers" class="row row-center-xxs">
+        <div class="scroll scroll--carousel scroll--carousel-video">
+          <div class="scroll--prev">
+            <a href="#" title="scroll to previous" class="btn btn-link"></a>
+          </div>
+          <div class="scroll--next">
+            <a href="#" title="scroll to next" class="btn btn-link"></a>
+          </div>
+        </div>
+        <div class="col-xxs-12 col-sm-4 player__container active">
           <div class="player">
-
+            <video class="video-content" poster="<%= @getUrl('img/video-poster-1.jpg') %>" preload>
+              <source src="<%= @getUrl('video/nens-testimonials.mp4') %>" type="video/mp4; codecs=avc1.42E01E,mp4a.40.2" />
+                <source src="<%= @getUrl('video/nens-testimonials.ogg') %>" type="video/ogg; codecs=theora,vorbis" />
+              <source src="<%= @getUrl('video/nens-testimonials.webm') %>" type="video/webm; codecs=vp8,vorbis" />
+              <object width="100%" height="100%" type="application/x-shockwave-flash"
+                data="flowplayer-3.2.1.swf">
+                <param name="movie" value="flowplayer-3.2.1.swf" />
+                <param name="allowfullscreen" value="true" />
+                <param name="flashvars" value="config={'clip': {'url': 'http://localhost:9800/video/nens-testimonials.mp4', 'autoPlay':false, 'autoBuffering':true}}" />
+                <p>Download video as <a href="<%= @getUrl('video/nens-testimonials.mp4') %>">MP4</a>, <a href="<%= @getUrl('video/nens-testimonials.webm') %>">WebM</a>, or <a href="<%= @getUrl('video/nens-testimonials.ogg') %>">Ogg</a>.</p>
+              </object>
+            </video>
           </div>
         </div>
         <div class="col-xxs-12 col-sm-4 player__container">
           <div class="player">
-
+            <video class="video-content" poster="<%= @getUrl('img/video-poster-2.jpg') %>" preload >
+              <source src="<%= @getUrl('video/parentingsafechildren-testimonials.mp4') %>" type="video/mp4; codecs=avc1.42E01E,mp4a.40.2" />
+                <source src="<%= @getUrl('video/parentingsafechildren-testimonials.ogg') %>" type="video/ogg; codecs=theora,vorbis" />
+              <source src="<%= @getUrl('video/parentingsafechildren-testimonials.webm') %>" type="video/webm; codecs=vp8,vorbis" />
+              <object width="100%" height="100%" type="application/x-shockwave-flash"
+                data="flowplayer-3.2.1.swf">
+                <param name="movie" value="flowplayer-3.2.1.swf" />
+                <param name="allowfullscreen" value="true" />
+                <param name="flashvars" value="config={'clip': {'url': 'http://localhost:9800/video/parentingsafechildren-testimonials.mp4', 'autoPlay':false, 'autoBuffering':true}}" />
+                <p>Download video as <a href="<%= @getUrl('video/parentingsafechildren-testimonials.mp4') %>">MP4</a>, <a href="<%= @getUrl('video/parentingsafechildren-testimonials.webm') %>">WebM</a>, or <a href="<%= @getUrl('video/parentingsafechildren-testimonials.ogg') %>">Ogg</a>.</p>
+              </object>
+            </video>
           </div>
         </div>
         <div class="col-xxs-12 col-sm-4 player__container">
           <div class="player">
-
+            <video class="video-content" poster="<%= @getUrl('img/video-poster-3.jpg') %>" preload>
+              <source src="<%= @getUrl('video/thesalesadvantage-testimonials.mp4') %>" type="video/mp4; codecs=avc1.42E01E,mp4a.40.2" />
+                <source src="<%= @getUrl('video/thesalesadvantage-testimonials.ogg') %>" type="video/ogg; codecs=theora,vorbis" />
+              <source src="<%= @getUrl('video/thesalesadvantage-testimonials.webm') %>" type="video/webm; codecs=vp8,vorbis" />
+              <object width="100%" height="100%" type="application/x-shockwave-flash"
+                data="flowplayer-3.2.1.swf">
+                <param name="movie" value="flowplayer-3.2.1.swf" />
+                <param name="allowfullscreen" value="true" />
+                <param name="flashvars" value="config={'clip': {'url': 'http://localhost:9800/video/thesalesadvantage-testimonials.mp4', 'autoPlay':false, 'autoBuffering':true}}" />
+                <p>Download video as <a href="<%= @getUrl('video/thesalesadvantage-testimonials.mp4') %>">MP4</a>, <a href="<%= @getUrl('video/thesalesadvantage-testimonials.webm') %>">WebM</a>, or <a href="<%= @getUrl('video/thesalesadvantage-testimonials.ogg') %>">Ogg</a>.</p>
+              </object>
+            </video>
           </div>
         </div>
       </div>
@@ -270,6 +306,6 @@ isPage: true
 </article>
 <footer>
   <div class="footer">
-    © JoomlaLMS, 2016
+    © JoomlaLMS, 2017
   </div>
 </footer>

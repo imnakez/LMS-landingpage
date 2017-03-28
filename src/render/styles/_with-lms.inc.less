@@ -1,0 +1,28 @@
+.wrapper--with-lms {
+  position: relative;
+  background: linear-gradient(to right, @grey 0%, @grey-dark 50%, @grey 100%);
+}
+
+.with-lms {
+  position: relative;
+  z-index: 2;
+}
+
+.with-lms__point {
+  flex-basis: 0;
+  -ms-flex-preferred-size: auto;
+  position: relative;
+  margin-top: 2em;
+  padding-left: 70px;
+  text-align: left;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 49px;
+    height: 39px;
+    top: 8px;
+    left: 0;
+    background: url(../img/point.svg) center no-repeat;
+  }
+}

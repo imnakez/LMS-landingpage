@@ -88,7 +88,7 @@ module.exports = (grunt) ->
 				options:
 					livereload: true
 			less:
-				files: ['src/render/styles/styles.inc.less']
+				files: ['src/render/styles/*.less']
 				tasks: [
 					'postprocess',
 				]
