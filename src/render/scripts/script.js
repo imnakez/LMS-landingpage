@@ -19,13 +19,22 @@ $(function() {
     var window_height = $window.height();
     var window_top_position = $window.scrollTop();
     var window_bottom_position = (window_top_position + window_height);
+    var scrollTop = false;
+    if ($window.hasClass('scrolltop')) {
+      scrollTop = true;
+    }
 
     $.each($animation_elements, function() {
       var $element = $(this);
       var element_data = $element.data();
       var element_top_position = element_data.topPosition;
       var element_bottom_position = element_data.bottomPosition;
-      var animation = element_data.animation;
+      var animation;
+      if (!scrollTop) {
+        animation = element_data.animationDown;
+      } else {
+        animation = element_data.animationTop;
+      }
 
       // check to see if this current container is within viewport
       if ((element_bottom_position >= (window_top_position + 100)) &&

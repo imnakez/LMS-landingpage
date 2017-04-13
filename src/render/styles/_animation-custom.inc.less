@@ -75,22 +75,33 @@
   }
 }
 
+@keyframes fadeInDown {
+  0% {
+      opacity: 0;
+      transform: translate3d(0, -20%, 0);
+  }
+
+  100% {
+      opacity: 1;
+      transform: none;
+  }
+}
+
 .fadeInUp {
   animation-name: fadeInUp;
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
 }
 
 .animation {
   opacity: 0;
   transition: opacity 300ms ease-in-out;
-
-  .scrolltop &:not(.in-view) {
-    animation-direction: reverse;
-  }
 }
 
 .in-view {
-  opacity: 1;
-  transition: opacity 300ms ease-in-out;
+  //opacity: 1;
   transform: translate3d(0, 0, 0);
   perspective: 1000px;
   backface-visibility: hidden;

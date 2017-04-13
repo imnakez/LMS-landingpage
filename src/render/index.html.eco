@@ -57,7 +57,7 @@ isPage: true
           </div>
         </div>
         <h5 class="notes space-out-top-zero-xxs space-out-bottom-mili-xxs">By clicking above to sign up, you are agreeing to the JLMS <a href="/" class="">Terms of Service</a> &amp; <a href="/" class="">Privacy Policy</a></h5>
-        <div class="row row-center-xxs animation" data-animation="bounceIn">
+        <div class="row row-center-xxs animation" data-animation-down="bounceIn" data-animation-top="bounceIn">
           <div class="col-xxs-12 col-sm-7 col-md-4">
             <button class="btn btn-purchase btn-block" type="button" name="button">Start Your Free Trial</button>
           </div>
@@ -190,29 +190,29 @@ isPage: true
       <h1 class="header header--iconed space-out-bottom-kilo-xxs">Features</h1>
       <div class="row row-between-sm row-center-md">
         <div class="col-xxs-12 col-sm-6 col-lg-5 col-xlg-5 col-flex-sm space-in-right-mili-md space-in-right-kilo-lg features__container">
-          <div class="flex-grow-sm features__point active animation" data-animation="fadeInUp">
+          <div class="flex-grow-sm features__point active animation" data-animation-down="fadeInUp" data-animation-top="fadeInDown">
             <h4 class="features__header space-out-bottom-zero-xxs">SCORM and AICC Compatibility</h4>
             <h5 class="features__description space-out-bottom-zero-xxs space-out-top-mili-xxs">Save time on content creation, easily export-import eLearning materials and apply different eLearning techniques</h5>
           </div>
-          <div class="flex-grow-sm features__point space-out-top-base-xxs space-out-top-zero-sm animation" data-animation="fadeInUp">
+          <div class="flex-grow-sm features__point space-out-top-base-xxs space-out-top-zero-sm animation" data-animation-down="fadeInUp" data-animation-top="fadeInDown">
             <h4 class="features__header space-out-bottom-zero-xxs ">Android and iOS Compatible Mobile App</h4>
             <h5 class="features__description space-out-bottom-zero-xxs space-out-top-mili-xxs">Make mobile learning possible. You can use both an official mobile app or order a branded one with your own logo and listing on Play Market and iTunes</h5>
           </div>
-          <div class="flex-grow-sm features__point space-out-top-base-xxs space-out-top-zero-sm animation" data-animation="fadeInUp">
+          <div class="flex-grow-sm features__point space-out-top-base-xxs space-out-top-zero-sm animation" data-animation-down="fadeInUp" data-animation-top="fadeInDown">
             <h4 class="features__header space-out-bottom-zero-xxs ">Advanced Ecommerce Capabilities</h4>
             <h5 class="features__description space-out-bottom-zero-xxs space-out-top-mili-xxs">Sell courses using a variety of ecommerce tools integrated, issue invoices, generate coupons, discounts and fee trials</h5>
           </div>
         </div>
         <div class="col-xxs-12 col-sm-6 col-lg-5 col-xlg-5 col-flex-sm space-in-left-mili-md space-in-left-kilo-lg features__container">
-          <div class="flex-grow-sm features__point space-out-top-base-xxs space-out-top-zero-sm animation" data-animation="fadeInUp">
+          <div class="flex-grow-sm features__point space-out-top-base-xxs space-out-top-zero-sm animation" data-animation-down="fadeInUp" data-animation-top="fadeInDown">
             <h4 class="features__header space-out-bottom-zero-xxs ">Comprehensive Tracking and Reporting</h4>
             <h5 class="features__description space-out-bottom-zero-xxs space-out-top-mili-xxs">Stay in the know of an eLearning/training process, find gaps in students knowledge and bring necessary changes</h5>
           </div>
-          <div class="flex-grow-sm features__point space-out-top-base-xxs space-out-top-zero-sm animation" data-animation="fadeInUp">
+          <div class="flex-grow-sm features__point space-out-top-base-xxs space-out-top-zero-sm animation" data-animation-down="fadeInUp" data-animation-top="fadeInDown">
             <h4 class="features__header space-out-bottom-zero-xxs ">Live/Video Conferencing</h4>
             <h5 class="features__description space-out-bottom-zero-xxs space-out-top-mili-xxs">Schedule live  conferences and webinars within JoomlaLMS framework. Apply blended learning technique</h5>
           </div>
-          <div class="flex-grow-sm features__point space-out-top-base-xxs space-out-top-zero-sm animation" data-animation="fadeInUp">
+          <div class="flex-grow-sm features__point space-out-top-base-xxs space-out-top-zero-sm animation" data-animation-down="fadeInUp" data-animation-top="fadeInDown">
             <h4 class="features__header space-out-bottom-zero-xxs ">Joomla! CMS as a Platform for Your Project</h4>
             <h5 class="features__description space-out-bottom-zero-xxs space-out-top-mili-xxs">Extend default JoomlaLMS functionality by adding integration with numerous Joomla! extensions. Have a full control over CMS and LMS</h5>
           </div>
